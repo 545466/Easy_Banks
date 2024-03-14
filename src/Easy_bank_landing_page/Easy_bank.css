@@ -1,0 +1,371 @@
+*{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    cursor: pointer;
+    background: hsl(0, 0%, 98%);
+}
+.header{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 100px;
+    position: relative;
+    z-index: 1;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: grey;
+    margin: 0 10px;
+    font-size: 18px;
+}
+#navbar{
+    padding: 0 80px;
+    
+}
+#navbar li a:hover{
+    color: hsl(233, 26%, 24%);
+}
+/* #navbar li a:hover::before{
+    content: "";
+    width: 100%;
+    width: 60px;
+    top: 75px;
+    height: 3px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    position: absolute;
+} */
+.invite{
+    display: flex;
+    height: 40px;
+    width: 150px;
+    justify-content: center;
+    padding-bottom: 3px;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: white;
+}
+
+.menu{
+    display: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0px 80px 100px;
+    background-image: url(C:\Users\nnabu\OneDrive\Desktop\Easy_bank\src\Easy_bank_landing_page\Assets\images\bg-intro-desktop.svg);
+    background-position-x: right;
+    background-position-x: 200%;
+    background-position-y: top;
+    background-position-y: -160px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.gen{
+    width: 43%;
+    padding-bottom: 200px;
+}
+.gen h1{
+    color: hsl(233, 26%, 24%);
+    font-size: 3rem;
+}
+.gen .online{
+    color: grey;
+}
+.gen h1, .gen p{
+    margin: 20px 0;
+}
+.main .phone{
+    width: 40%;
+    position: relative;
+    top: -150px;
+    right: -80px;
+    z-index: 0;
+}
+.why{
+    padding-bottom: 40px;
+    padding-top: 20px;
+    width: 600px;
+}
+/* .mob{
+    
+}
+.mob img{
+    position: relative;
+    left: 50%;
+} */
+.item {
+    background-color: rgb(239, 239, 239);
+    padding: 80px 100px;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sub-row{
+    width: 215px;
+}
+.sub-row h1{
+    font-size: 18px;
+    padding: 20px 0px;
+}
+.sub-row p{
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+.latest{
+    padding-top: 60px;
+    padding-left: 100px;
+    font-weight: 400;
+}
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 100px;
+}
+.sub-article img{
+    width: 100%;
+    max-height: 130px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    /* height: 150px; */
+}
+.sub-article{
+    background: white;
+    border-radius: 5px;
+}
+.author, .content{
+    padding: 0 20px;
+}
+.sub-article .head{
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 160px;
+}
+.sub-article .head:hover{
+    color: hsl(192, 70%, 51%);
+}
+.sub-article .author{
+    font-size: 10px;
+    color: gray;
+    padding-top: 10px;
+}
+.sub-article .content{
+    font-size: 12px;
+    color: gray;
+    width: 160px;
+    padding-bottom: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(233, 26%, 24%) ;
+    padding: 40px 100px;
+    margin-top: 40px;
+}
+.icon svg{
+   padding-right: 10px;
+   padding-top: 50px;
+   fill: white;
+}
+.link_a{
+    display: flex;
+    flex-direction: column;
+}
+.link_a p{
+    color: white;
+    padding: 10px 0;
+}
+.link_a p:hover{
+    color: hsl(136, 65%, 51%);
+}
+.icon svg:hover{
+    fill: hsl(136, 65%, 51%);
+}
+
+@media (max-width:415px){
+    .header{
+        padding: 0 40px;
+    }
+    .links{
+        flex-direction: column;
+        background: white;
+        width: 85%;
+        border-radius: 5px;
+        position: absolute;
+        margin-top: 20px;
+        text-align: center;
+        right: 7.5%;
+        top: 80px; 
+    }
+    .link{
+        flex-direction: column;
+    }
+    .links .active{
+        right: 100%;
+        display: none;
+    }
+    .links a{
+        padding: 10px 0;
+    }
+    #navbar{
+        padding: 20px 0;
+    }
+    ul li{
+        justify-content: center;
+        font-weight: 600;
+    
+    }
+    .menu{
+        display: flex;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px;
+        text-align: center;
+        background-image: url("C:\Users\nnabu\OneDrive\Desktop\Easy_bank\src\Easy_bank_landing_page\Assets\images\bg-intro-mobile.svg");
+        background-size: contain;
+        background-position-y: -50px;
+        background-repeat: no-repeat;
+    }
+    .main img{
+        width: 80%;
+        order: 1;
+    }
+    .main .phone{
+        width: 90%;
+        position: relative;
+        top: -120px;
+        right: 0px;
+        z-index: 0;
+    }
+    .header .invite{
+        display: none;
+    }
+    .gen .invite{
+        margin: 40px auto;
+    }
+    .gen{
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+    .gen h1{
+        font-size: 2rem;
+    }
+    .why{
+        width: 100%;
+    }
+    .item{
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+    .row{
+        width: 100%;
+    }
+    .sub-row{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .sub-row{
+        text-align: center;
+    }
+    .sub-row img{
+        margin: 0 auto;
+    }
+    .article{
+        padding-left: 30px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30px;
+        align-items: center;
+        margin: auto;
+    }
+    .sub-article{
+        margin-bottom: 80px;
+    }
+    .sub-article .head{
+        width: 90%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .sub-article .author{
+        font-size: 14px;
+    }
+    .sub-article .content{
+        padding-right: 20px;
+        width: 90%;
+        font-size: 16px;
+    }
+    .sub-article img{
+        max-height: 170px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .link_a{
+        text-align: center;
+    }
+    .footer .invite{
+        margin: 20px 0;
+    }
+    .icon svg{
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+     }
+}
+/* @media (max-width:900px){
+    .links{
+        flex-direction: column;
+        background: white;
+        width: 50%;
+        position: fixed;
+        right: -300px;
+        top: 70px; 
+    }
+    .links active{
+        right: 0;
+    }
+    li {
+        padding: 10px 0;
+    }
+    .menu{
+        display: flex;
+    }
+    .header p{
+        display: none;
+    }
+} */
